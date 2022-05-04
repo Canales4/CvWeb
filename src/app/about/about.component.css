@@ -1,0 +1,162 @@
+.sobre {
+    background-color: rgb(0, 194, 145);
+    color: rgb(0, 0, 56);
+    width: 100%;
+    height: 20rem;
+}
+
+.sobre h1{
+  color: rgb(0, 0, 56)!important;
+  margin: 5px;
+}
+
+.txt-sobre{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.txt-sobre p {
+  font-size: 16px;
+  font-family: 'Quicksand';
+}
+
+.info-sobre{
+  background-color: rgb(0, 56, 47)!important;
+  color: white;
+  border-radius: 7px;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+#lista {
+  counter-reset: li; 
+  list-style: none; 
+  *list-style: decimal; 
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+#lista ul {
+  margin: 0 0 0 2em; 
+}
+
+#lista li{
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em .8em;
+  *padding: .4em;
+  margin: .5em 0 .5em 2.5em;
+  background: #ddd;
+  color: #444;
+  text-decoration: none;
+  transition: all .3s ease-out;   
+}
+
+#lista li:hover{
+  background: #eee;
+}   
+
+#lista li:before{
+  content: counter(li);
+  counter-increment: li;
+  position: absolute; 
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background: #fa8072;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+#lista li:after{
+  position: absolute; 
+  content: '';
+  border: .5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -.5em;
+  transition: all .3s ease-out;               
+}
+
+#lista li:hover:after{
+  left: -.5em;
+  border-left-color: #fa8072;             
+}
+
+.descr {
+  text-align: end;
+  color: white;
+  background-color: green;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px;
+  margin-top: 5px;
+}
+
+.foto{
+    float: left;
+    margin:10px auto;
+    border-radius:10px;
+    box-shadow: 7px 3px 3px rgb(0, 44, 38);;
+    padding:13px;
+    width:220px;
+    height:95%;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-image: url("../../assets/fotocv.jpeg");
+    background-size: cover;
+  }
+  
+  .foto img{
+    width: 100%;
+  }
+
+  h1{
+    color: white;
+    font-size: 50px;
+    margin: 10px;
+    font-family: 'Teko', Arial;
+  }
+
+  @media (max-width: 768px ){
+    h1{
+      font-size: 45px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+
+    .sobre {
+      height: 50rem;
+    }
+
+    .foto{
+      border-radius: 2000px;
+      width: 100%;
+      height: 50%;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    h1{
+      font-size: 45px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    h1{
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    h1{
+      font-size: 35px;
+    }
+  }
