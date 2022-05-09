@@ -3,4 +3,23 @@ footer {
     width: 100%;
     background-color: rgb(18, 56, 47);
     color: white;
+    margin-top: 180px;
   }
+  
+@media (max-width: 800px) {
+    footer{
+      margin-top: 348px;
+    }
+}
+
+@media (max-width: 500px) {
+  footer{
+    margin-top: 2014px;margin-top: 1966px;
+  }
+}
+
+@media (max-width: 320px) {
+  footer{
+    margin-top: 1966px;
+  }
+}

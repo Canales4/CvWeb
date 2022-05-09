@@ -2,21 +2,90 @@
   background-color: rgb(114, 212, 188);
   width: 100%;
   height: 20rem;
+  text-align: center;
 }
 
 .est h1{
   color: rgb(0, 0, 56)!important;
+  text-align: left;
+}
+
+.dot {
+  font-family: 'Teko', Arial;
+  height: 175px;
+  width: 175px;
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color: rgb(66, 117, 104);
+  border: 4px solid rgb(31, 53, 47);
+  border-radius: 50%;
+  display: inline-block;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.dot-txt-small{
+  display: flex;
+  justify-content: center;
+}
+
+.dot-txt-big{
+  display: flex;
+  justify-content: center;
+}
+
+.dot:hover{
+  height: 150px;
+  width: 150px;
+  margin-top: 25px;
+  transform: scale(2);
+  border-radius: 0%;
+}
+
+.dot-txt-big {
+  position: absolute;
+  padding-top: -60px;
+  visibility: hidden;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  word-wrap: break-word;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.dot-txt-small{
+  position: relative;
+  color: white;
+  font-size: 40px;
+  padding-top: 75px;
+  text-align: center;
+}
+
+.dot:hover .dot-txt-big{
+  visibility: visible;
+}
+
+.dot:hover .dot-txt-small{
+  visibility: hidden;
 }
 
 h1{
-    color: white;
-    font-size: 50px;
-    margin: 10px;
-    font-family: 'Teko', Arial;
-  }
+   color: white;
+   font-size: 50px;
+   margin: 10px;
+   font-family: 'Teko', Arial;
+}
   @media (max-width: 768px ){
     h1{
       font-size: 45px;
+    }
+
+    .est{
+      height: 488px;
     }
   }
   
@@ -30,6 +99,15 @@ h1{
   @media (max-width: 540px) {
     h1{
       font-size: 45px;
+    }
+    
+    .est{
+      height: 1021px;
+    }
+
+    .dot{
+      margin-bottom: 85px;
+      margin-top: 69px;
     }
   }
   

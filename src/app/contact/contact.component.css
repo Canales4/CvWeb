@@ -40,18 +40,41 @@ h1{
     h1{
       font-size: 45px;
     }
+    .cont{
+      height: 592px;
+    }
   }
   
   @media (max-width: 375px) {
     h1{
       font-size: 40px;
     }
+
+    .cont{
+      height: 666px;
+    }
+
+    .enla{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
   }
   
   @media (max-width: 320px) {
     h1{
       font-size: 35px;
     }
+
+    .cont{
+      height: 714px;
+    }
+
+    .enla{
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+
   }
   
   

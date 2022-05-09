@@ -2,7 +2,7 @@
     background-color: rgb(0, 194, 145);
     color: rgb(0, 0, 56);
     width: 100%;
-    height: 20rem;
+    height: 500px;
 }
 
 .sobre h1{
@@ -27,6 +27,10 @@
   border-radius: 7px;
   padding: 5px;
   padding-top: 10px;
+}
+
+.info-sobre h1{
+    color: white!important;
 }
 
 #lista {
@@ -66,7 +70,7 @@
   left: -2.5em;
   top: 50%;
   margin-top: -1em;
-  background: #fa8072;
+  background: #72fa84;
   height: 2em;
   width: 2em;
   line-height: 2em;
@@ -86,14 +90,19 @@
 
 #lista li:hover:after{
   left: -.5em;
-  border-left-color: #fa8072;             
+  border-left-color: #72fa84;             
 }
 
 .descr {
-  text-align: end;
+  font-size: 30px;
+  font-family: 'Teko', Arial;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(69,110,78,1);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(69,110,78,1);
+  box-shadow: 4px 4px 5px 0px rgba(69,110,78,1);
   color: white;
-  background-color: green;
-  border: 1px solid black;
+  background-color: #43b46f;
   border-radius: 5px;
   padding: 2px;
   margin-top: 5px;
@@ -105,7 +114,6 @@
     border-radius:10px;
     box-shadow: 7px 3px 3px rgb(0, 44, 38);;
     padding:13px;
-    width:220px;
     height:95%;
     background-size: 100% 100%;
     background-repeat:no-repeat;
@@ -125,6 +133,18 @@
   }
 
   @media (max-width: 768px ){
+
+    
+    .info-sobre{
+      height: 239px;
+    }
+    
+    .txt-sobre{
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+    }
+
     h1{
       font-size: 45px;
     }
@@ -132,8 +152,13 @@
   
   @media (max-width: 576px) {
 
+    .foto[_ngcontent-evx-c27] {
+      border-radius: 2000px;
+      width: 100%;
+      height: 33%;
+    } 
     .sobre {
-      height: 50rem;
+      height: 71rem;
     }
 
     .foto{
@@ -150,12 +175,36 @@
   }
   
   @media (max-width: 375px) {
+
+    .foto {
+      height: 41%;
+    }
+
+    .info-sobre{
+      height: 250px;
+    }
+
+    .sobre {
+      height: 64rem;
+    }
+
     h1{
       font-size: 40px;
     }
   }
   
   @media (max-width: 320px) {
+    .foto {
+      height: 33%;
+    }
+    .info-sobre{
+      height: 285px;
+    }
+
+    .sobre {
+      height: 61rem;
+    }
+
     h1{
       font-size: 35px;
     }
