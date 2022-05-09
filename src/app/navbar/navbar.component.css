@@ -3,21 +3,26 @@ nav{
     text-align: center;
 }
 
+.nav-link {
+    margin-top: 12px;
+}
+
+.li-btn {
+    
+}
+
 a{
     color: white!important;
 }
 
 li.nav-item:hover {
     background-color: rgb(18, 56, 47);
-    
 }
 
 .logo img{
     width: 200px;
     height: 50px;
 }
-
-
 
 @media (max-width: 991px) {
     .navbar-collapse{
