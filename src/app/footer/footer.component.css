@@ -14,7 +14,32 @@ footer {
 
 @media (max-width: 500px) {
   footer{
-    margin-top: 2014px;margin-top: 1966px;
+    margin-top: 1966px;
+  }
+}
+
+
+@media (max-width: 424px) {
+  footer{
+    margin-top: 1790px;
+  }
+}
+
+@media (max-width: 402px) {
+  footer{
+    margin-top: 1854px;
+  }
+}
+
+@media (max-width: 375px) {
+  footer{
+    margin-top: 1966px;
+  }
+}
+
+@media (max-width: 340px) {
+  footer{
+    margin-top: 1918px;
   }
 }
 

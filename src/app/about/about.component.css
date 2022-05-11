@@ -173,8 +173,26 @@
       font-size: 45px;
     }
   }
+
+  @media (max-width: 424px) {
+    .foto {
+      height: 41%;
+    }
+
+    .info-sobre{
+      height: 250px;
+    }
+
+    .sobre {
+      height: 60rem;
+    }
+
+    h1{
+      font-size: 40px;
+    }
+  }
   
-  @media (max-width: 375px) {
+  @media (max-width: 402px) {
 
     .foto {
       height: 41%;
@@ -193,7 +211,7 @@
     }
   }
   
-  @media (max-width: 320px) {
+  @media (max-width: 340px) {
     .foto {
       height: 33%;
     }
